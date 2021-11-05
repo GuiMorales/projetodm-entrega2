@@ -1,0 +1,36 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <!--     <ion-title>Title</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-margin">
+  <ion-card>
+    <ion-img src="../../assets/images/header.png" class="img-back"></ion-img>
+  </ion-card>
+
+  <div class="title ion-padding">
+    <h1>Olá!</h1>
+    <p>O que deseja fazer hoje?</p>
+  </div>
+
+  <div class="atividade-slider ion-padding-start">
+    <ion-slides
+      [options]="{ slidesPerView: 'auto', zoom: false, gradCursor: true }"
+    >
+      <ion-slide routerLink="/notas">
+        <ion-col>
+          <h4>Nota</h4>
+          <img src="../../assets/images/note.png" />
+        </ion-col>
+      </ion-slide>
+
+      <ion-slide routerLink="/eventos">
+        <ion-col>
+          <h4>Eventos</h4>
+          <img src="../../assets/images/event.png" />
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</ion-content>
